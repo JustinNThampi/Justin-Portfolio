@@ -31,6 +31,12 @@ body {
 
 }
 
+.menu-icon {
+
+    display: none;
+
+}
+
 /* ---------- Body ---------- */
 
 body {
@@ -41,6 +47,20 @@ body {
 
 }
 
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+
+    background: rgba(15, 23, 42, 0.7);
+
+}
+
 /* ===========================
    NAVBAR
 =========================== */
@@ -48,6 +68,7 @@ body {
 .navbar {
 
     width: 90%;
+
     max-width: 1200px;
 
     margin: auto;
@@ -58,7 +79,13 @@ body {
 
     align-items: center;
 
-    padding: 25px 0;
+    padding: 20px 0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
 
 }
 
@@ -595,5 +622,413 @@ body {
     margin-bottom: 12px;
 
     font-size: 17px;
+
+}
+
+/* ===========================
+   PROJECTS SECTION
+=========================== */
+
+
+.projects {
+
+    padding: 100px 10%;
+
+}
+
+
+
+.projects-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.project-card {
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    display:block;
+
+}
+
+
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: var(--primary);
+
+}
+
+
+
+.project-image img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+
+
+.project-content {
+
+    padding: 25px;
+
+}
+
+
+
+.project-content h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.project-content p {
+
+    color: var(--secondary);
+
+    line-height: 1.7;
+
+}
+
+.project-role{
+
+    margin-top:20px;
+
+    padding-left:20px;
+
+    color:var(--secondary);
+
+}
+
+
+.project-role li{
+
+    margin-bottom:8px;
+
+}
+
+
+.tech-stack {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.tech-stack span {
+
+    background: rgba(56, 189, 248, 0.15);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    color: var(--primary);
+
+}
+
+/* ===========================
+   CERTIFICATES
+=========================== */
+
+.certificates{
+
+    padding:100px 10%;
+
+}
+
+
+/* ---------- Wrapper ---------- */
+
+.certificate-wrapper{
+
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+
+/* Left Fade */
+
+/* .certificate-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:80px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to right,
+        rgba(15,23,42,1),
+        rgba(15,23,42,0)
+    );
+
+    z-index:2;
+
+    pointer-events:none;
+
+} */
+
+
+/* Right Fade */
+
+/* .certificate-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:0;
+
+    width:80px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to left,
+        rgba(15,23,42,1),
+        rgba(15,23,42,0)
+    );
+
+    z-index:2;
+
+    pointer-events:none;
+
+} */
+
+
+/* ---------- Slider ---------- */
+
+.certificate-slider{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scroll-snap-type:x mandatory;
+
+    scrollbar-width:none;
+
+    padding:10px 5px 20px;
+
+}
+
+
+.certificate-slider::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+
+/* ---------- Card ---------- */
+
+.certificate-card{
+
+    min-height:280px;
+
+    width:320px;
+
+    flex:0 0 auto;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:18px;
+
+    padding:30px;
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+
+    scroll-snap-align:start;
+
+}
+
+
+.certificate-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 15px 35px rgba(56,189,248,.18);
+
+}
+
+
+.certificate-card:active{
+
+    transform:scale(.98);
+
+}
+
+
+.certificate-card:focus{
+
+    outline:2px solid var(--primary);
+
+    outline-offset:4px;
+
+}
+
+
+/* ---------- Label ---------- */
+
+.certificate-label{
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:var(--secondary);
+
+    margin-bottom:12px;
+
+}
+
+
+/* ---------- Icon ---------- */
+
+.certificate-icon{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ---------- Title ---------- */
+
+.certificate-card h3{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+    color:var(--text);
+
+}
+
+
+/* ---------- Description ---------- */
+
+.certificate-card p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+
+/* ---------- Footer ---------- */
+
+.certificate-card span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-top:10px;
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+    .certificates{
+
+        padding:80px 20px;
+
+    }
+
+    .certificate-card{
+
+        width:280px;
+
+        padding:25px;
+
+    }
+
+    .certificate-icon{
+
+        font-size:40px;
+
+    }
+
+    .certificate-card h3{
+
+        font-size:20px;
+
+    }
 
 }
