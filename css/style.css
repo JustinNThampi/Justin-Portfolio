@@ -80,7 +80,7 @@ body{
 
     list-style:none;
 
-    gap:35px;
+    gap:45px;
 
 }
 
@@ -123,5 +123,115 @@ body{
 .btn:hover{
 
     transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+    padding:12px 24px;
+
+    border:2px solid var(--primary);
+
+    border-radius:8px;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 20px;
+
+}
+
+.hero-content{
+
+    max-width:800px;
+
+}
+
+.greeting{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    font-size:28px;
+
+    font-weight:500;
+
+    color:var(--secondary);
+
+    margin-bottom:30px;
+
+    line-height:1.6;
+
+}
+
+.hero-text{
+
+    font-size:18px;
+
+    color:var(--secondary);
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
 
 }
