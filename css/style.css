@@ -419,9 +419,6 @@ body {
 }
 
 
-
-
-
 .about-container {
 
     display: flex;
@@ -431,9 +428,6 @@ body {
     gap: 60px;
 
 }
-
-
-
 
 
 .about-text {
@@ -465,8 +459,6 @@ body {
 }
 
 
-
-
 /* Timeline */
 
 
@@ -479,7 +471,6 @@ body {
 }
 
 
-
 .timeline-item {
 
     margin-bottom: 40px;
@@ -487,7 +478,6 @@ body {
     position: relative;
 
 }
-
 
 
 .timeline-item::before {
@@ -511,7 +501,6 @@ body {
 }
 
 
-
 .timeline-item span {
 
     color: var(--primary);
@@ -519,7 +508,6 @@ body {
     font-weight: 600;
 
 }
-
 
 
 .timeline-item h4 {
@@ -531,9 +519,81 @@ body {
 }
 
 
-
 .timeline-item p {
 
     color: var(--secondary);
+
+}
+
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+
+.skills {
+
+    padding: 100px 10%;
+
+}
+
+.skills-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+.skill-card {
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s;
+
+}
+
+.skill-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: var(--primary);
+
+}
+
+.skill-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+
+}
+
+.skill-card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+.skill-card li {
+
+    color: var(--secondary);
+
+    margin-bottom: 12px;
+
+    font-size: 17px;
 
 }
