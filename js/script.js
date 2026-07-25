@@ -1,3 +1,1 @@
-function hello(){
-    alert("Welcome to my website!");
-}
+console.log("Portfolio Loaded Successfully!");

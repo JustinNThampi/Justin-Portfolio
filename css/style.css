@@ -1,10 +1,42 @@
-body{
-    font-family: Arial;
-    text-align:center;
-    margin-top:100px;
+/* ---------- Google Font ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-button{
-    padding:10px 20px;
-    font-size:18px;
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+/* ---------- Variables ---------- */
+
+:root{
+
+    --bg:#0f172a;
+    --surface:#1e293b;
+
+    --primary:#38bdf8;
+
+    --text:#f8fafc;
+
+    --secondary:#94a3b8;
+
+    --border:#334155;
+
+}
+
+/* ---------- Body ---------- */
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
 }
