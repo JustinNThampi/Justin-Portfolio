@@ -1032,3 +1032,341 @@ header {
     }
 
 }
+
+/* ===========================
+   CREATIVE GALLERY
+=========================== */
+
+
+.gallery{
+
+    padding:100px 10%;
+
+}
+
+
+
+.creative-category{
+
+    margin-bottom:90px;
+
+}
+
+
+
+.creative-category h3{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* ===========================
+   GALLERY CONTAINER
+=========================== */
+
+
+.gallery-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    position:relative;
+
+}
+
+
+
+.gallery-window{
+
+    overflow:hidden;
+
+    width:100%;
+
+}
+
+
+
+
+.gallery-track{
+
+    display:flex;
+
+    gap:25px;
+
+    transition:transform .5s ease;
+
+}
+
+
+
+/* ===========================
+   IMAGE CARD
+=========================== */
+
+
+.gallery-card{
+
+    min-width:300px;
+
+    height:250px;
+
+    flex-shrink:0;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 15px 35px rgba(56,189,248,.2);
+
+}
+
+
+
+/* Future Images */
+
+
+.gallery-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+/* ===========================
+   ARROW BUTTONS
+=========================== */
+
+
+.gallery-arrow{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.05);
+
+    color:var(--text);
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:5;
+
+}
+
+
+
+.gallery-arrow:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+/* ===========================
+   INSTAGRAM BUTTON
+=========================== */
+
+
+.gallery-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:12px 25px;
+
+    border:2px solid var(--primary);
+
+    border-radius:8px;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.gallery-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    .gallery{
+
+        padding:80px 20px;
+
+    }
+
+
+    .gallery-card{
+
+        min-width:260px;
+
+        height:220px;
+
+    }
+
+
+    .gallery-arrow{
+
+        width:38px;
+
+        height:38px;
+
+        font-size:18px;
+
+    }
+
+
+}
+
+/* ===========================
+   GALLERY SLIDER
+=========================== */
+
+/* 
+.gallery-slider{
+
+    display:flex;
+
+    gap:25px;
+
+    width:max-content;
+
+    animation:galleryMove 25s linear infinite;
+
+}
+
+
+.gallery-slider:hover{
+
+    animation-play-state:paused;
+
+}
+
+
+.gallery-card{
+
+    width:300px;
+
+    height:250px;
+
+    flex-shrink:0;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 15px 35px rgba(56,189,248,.2);
+
+}
+
+
+.gallery-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+@keyframes galleryMove{
+
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+
+} */
