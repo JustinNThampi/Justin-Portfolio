@@ -7,17 +7,6 @@
 @media(max-width:768px) {
 
 
-    .navbar {
-
-        flex-direction: column;
-
-        gap: 20px;
-
-        text-align: center;
-
-    }
-
-
     .logo {
 
         font-size: 24px;
@@ -151,9 +140,7 @@
     .nav-links {
 
         position: absolute;
-
         top: 80px;
-
         left: 0;
 
         width: 100%;
@@ -168,8 +155,9 @@
 
         padding: 30px 0;
 
-
         display: none;
+
+        z-index: 1001;
 
     }
 
@@ -195,9 +183,9 @@
 
 
 
-        .certificate-container{
+    .certificate-container {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
