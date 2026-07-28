@@ -87,6 +87,8 @@ header {
 
     z-index: 1000;
 
+    transition:.3s;
+
 }
 
 .logo {
@@ -183,25 +185,146 @@ header {
    HERO
 =========================== */
 
-.hero {
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 20px;
+    position:relative;
+    overflow:hidden;
+    background: radial-gradient(circle at top left, rgba(56,189,248,.12), transparent 24%),
+                radial-gradient(circle at bottom right, rgba(139,92,246,.16), transparent 22%),
+                linear-gradient(180deg, #0c1527 0%, #08101e 100%);
+}
 
-    min-height: 90vh;
+.hero-container{
 
-    display: flex;
+    width:90%;
+    max-width:1200px;
 
-    justify-content: center;
+    display:flex;
 
-    align-items: center;
+    justify-content:space-between;
 
-    text-align: center;
+    align-items:center;
 
-    padding: 0 20px;
+    gap:80px;
+
+    flex-wrap:wrap;
 
 }
 
-.hero-content {
+.hero-content{
 
-    max-width: 800px;
+    flex:1;
+    max-width:620px;
+    text-align:left;
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    min-width:320px;
+
+}
+
+.hero-image-card{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:24px;
+
+    border-radius:36px;
+
+    background: rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 30px 90px rgba(0,0,0,.2);
+
+    backdrop-filter: blur(18px);
+
+    overflow:hidden;
+
+}
+
+.hero-image-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background: linear-gradient(135deg, rgba(56,189,248,.18), rgba(139,92,246,.12));
+
+    opacity:.3;
+
+    pointer-events:none;
+
+}
+
+.hero-image-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    background: rgba(56,189,248,.16);
+
+    filter: blur(18px);
+
+    pointer-events:none;
+
+}
+
+.hero-image-card img{
+    
+    width:100%;
+    
+    height:auto;
+    
+    display:block;
+    
+    border-radius:32px;
+    
+    object-fit:cover;
+    
+    position:relative;
+    
+    z-index:1;
+    
+   transition: transform .4s ease;
+    
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
 
 }
 
@@ -217,11 +340,11 @@ header {
 
 .hero h1 {
 
-    font-size: 64px;
+    font-size: 62px;
 
-    line-height: 1.1;
+    line-height: 1.05;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
 }
 
@@ -229,13 +352,13 @@ header {
 
     font-size: 28px;
 
-    font-weight: 500;
+    font-weight: 600;
 
-    color: var(--secondary);
+    color: var(--text);
 
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 
-    line-height: 1.6;
+    line-height: 1.4;
 
 }
 
@@ -245,9 +368,45 @@ header {
 
     color: var(--secondary);
 
-    line-height: 1.8;
+    line-height: 1.9;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    max-width: 640px;
+
+}
+
+.hero-badges {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+}
+
+.hero-badges span {
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding: 10px 16px;
+
+    border-radius:999px;
+
+    background: rgba(56,189,248,.13);
+
+    border:1px solid rgba(56,189,248,.22);
+
+    color: var(--primary);
+
+    font-weight:500;
+
+    font-size: 0.95rem;
 
 }
 
@@ -255,28 +414,83 @@ header {
 
     display: flex;
 
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: 20px;
 
     flex-wrap: wrap;
 
+    margin-bottom: 36px;
 }
+
+.hero-meta {
+
+    display:grid;
+
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+
+    gap: 16px;
+
+}
+
+.hero-stat {
+
+    padding: 18px 20px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,.03);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap: 8px;
+
+}
+
+.hero-stat strong {
+
+    font-size: 1.6rem;
+
+    color: var(--text);
+
+}
+
+.hero-stat span {
+
+    color: var(--secondary);
+
+    font-size: 0.95rem;
+
+}
+/* @keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+} */
 
 /* ===========================
    BACKGROUND ANIMATION
 =========================== */
-
-
-.hero {
-
-    position: relative;
-
-    overflow: hidden;
-
-}
-
-
 
 .background-shape {
 
@@ -291,8 +505,6 @@ header {
     z-index: -1;
 
 }
-
-
 
 .shape-one {
 

@@ -189,4 +189,46 @@
 
     }
 
+
+    .hero-container{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+    .hero-content{
+
+        text-align:center;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-meta {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .hero-image img{
+
+        width:280px;
+        height:280px;
+
+    }
+
+    .hero-image-card {
+
+        padding:18px;
+
+    }
+
 }
