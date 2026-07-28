@@ -206,6 +206,18 @@
 
     }
 
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-meta {
+
+        grid-template-columns: 1fr;
+
+    }
+
     .hero-image img{
 
         width:280px;
@@ -213,5 +225,10 @@
 
     }
 
+    .hero-image-card {
+
+        padding:18px;
+
+    }
 
 }
