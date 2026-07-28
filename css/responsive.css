@@ -6,6 +6,60 @@
 
 @media(max-width:768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-badges {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .hero-badges span {
+
+        padding: 7px 12px;
+
+        font-size: 0.8rem;
+
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .hero-meta {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
 
     .logo {
 
@@ -34,13 +88,13 @@
 
     .hero h1 {
 
-        font-size: 42px;
+        font-size: 32px;
 
     }
 
     .hero h2 {
 
-        font-size: 22px;
+        font-size: 15px;
 
     }
 
@@ -117,14 +171,6 @@
 
 
 
-    .logo {
-
-        font-size: 26px;
-
-    }
-
-
-
     .menu-icon {
 
         display: block;
@@ -190,19 +236,19 @@
     }
 
 
-    .hero-container{
+    .hero-container {
 
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
 
-        text-align:center;
+        text-align: center;
 
-        gap:40px;
+        gap: 40px;
 
     }
 
-    .hero-content{
+    .hero-content {
 
-        text-align:center;
+        text-align: center;
 
     }
 
@@ -218,16 +264,16 @@
 
     }
 
-    .hero-image img{
+    .hero-image img {
 
-        width:280px;
-        height:280px;
+        width: 280px;
+        height: 280px;
 
     }
 
     .hero-image-card {
 
-        padding:18px;
+        padding: 18px;
 
     }
 
