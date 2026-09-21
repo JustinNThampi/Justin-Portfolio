@@ -2206,3 +2206,351 @@ header {
 
 }
 
+
+/* ================================
+   TEMPLATES SECTION
+================================ */
+
+.templates {
+    padding: 100px 0;
+}
+
+.template-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* ================================
+   TEMPLATE CARD
+================================ */
+
+.template-card {
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.template-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(255, 255, 255, 0.2);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================================
+   BROWSER PREVIEW
+================================ */
+
+.template-preview {
+    position: relative;
+
+    margin: 14px;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    background: #111;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.browser-bar {
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 0 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.browser-bar span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ================================
+   WEBSITE PREVIEW
+================================ */
+
+.template-screen {
+    height: 220px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    padding: 30px;
+
+    transition: transform 0.5s ease;
+}
+
+.template-card:hover .template-screen {
+    transform: scale(1.03);
+}
+
+
+/* Business */
+
+.template-business {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(120, 80, 255, 0.35),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #111,
+            #1c1535
+        );
+}
+
+
+/* Portfolio */
+
+.template-portfolio {
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(0, 220, 255, 0.25),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #071014,
+            #101c22
+        );
+}
+
+
+/* SaaS */
+
+.template-saas {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(255, 120, 80, 0.25),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #17110f,
+            #241814
+        );
+}
+
+
+/* ================================
+   PREVIEW CONTENT
+================================ */
+
+.preview-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.preview-content small {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.6;
+}
+
+.preview-content h3 {
+    margin: 10px 0 18px;
+
+    font-size: 25px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+}
+
+.preview-button {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    font-size: 10px;
+}
+
+
+/* ================================
+   TEMPLATE INFO
+================================ */
+
+.template-info {
+    padding: 10px 22px 24px;
+}
+
+.template-info h3 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+}
+
+.template-info p {
+    margin: 0;
+
+    min-height: 48px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    opacity: 0.6;
+}
+
+
+/* ================================
+   TAGS
+================================ */
+
+.template-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin: 18px 0;
+}
+
+.template-tags span {
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    font-size: 10px;
+
+    opacity: 0.7;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.template-button {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 11px 14px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    color: inherit;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    font-size: 13px;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.template-button span {
+    font-size: 17px;
+
+    transition: transform 0.3s ease;
+}
+
+.template-button:hover {
+    background: rgba(255, 255, 255, 0.11);
+
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.template-button:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .template-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .templates {
+        padding: 70px 0;
+    }
+
+    .template-grid {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        margin-top: 40px;
+    }
+
+    .template-screen {
+        height: 200px;
+    }
+
+}
