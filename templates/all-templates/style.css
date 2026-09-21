@@ -971,3 +971,163 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================
+   NOVA Portfolio Preview
+========================================= */
+
+.nova-preview {
+    background: #0a0a0a;
+}
+
+.nova-mockup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(255,255,255,0.08),
+            transparent 32%
+        ),
+        #0a0a0a;
+}
+
+/* Navigation */
+
+.nova-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 4px 14px;
+}
+
+.nova-nav strong {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.nova-nav-links {
+    display: flex;
+    gap: 5px;
+}
+
+.nova-nav-links span {
+    width: 18px;
+    height: 3px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.25);
+}
+
+/* Hero */
+
+.nova-hero {
+    position: relative;
+    height: calc(100% - 30px);
+    padding-top: 22px;
+}
+
+.nova-eyebrow {
+    width: 48px;
+    height: 4px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.45);
+}
+
+.nova-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nova-heading span {
+    display: block;
+    height: 9px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.nova-heading span:nth-child(1) {
+    width: 105px;
+}
+
+.nova-heading span:nth-child(2) {
+    width: 82px;
+}
+
+.nova-heading span:nth-child(3) {
+    width: 62px;
+}
+
+.nova-description {
+    width: 105px;
+    height: 18px;
+    margin-top: 12px;
+    border-radius: 3px;
+    background: rgba(255,255,255,0.14);
+}
+
+/* Buttons */
+
+.nova-actions {
+    display: flex;
+    gap: 6px;
+    margin-top: 13px;
+}
+
+.nova-actions div {
+    width: 42px;
+    height: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.nova-actions div:first-child {
+    background: #fff;
+}
+
+/* Abstract Orbit */
+
+.nova-orbit {
+    position: absolute;
+    right: 12px;
+    top: 45px;
+
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 50%;
+}
+
+.nova-orbit::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+}
+
+.nova-orbit-inner {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.nova-orbit span {
+    position: absolute;
+    color: rgba(255,255,255,0.7);
+    font-size: 8px;
+    letter-spacing: 1px;
+}
