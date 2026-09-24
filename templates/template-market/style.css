@@ -600,6 +600,26 @@ section {
     box-shadow 0.25s ease;
 }
 
+.category-card[hidden],
+#additional-categories[hidden] {
+  display: none;
+}
+
+.category-toggle {
+  width: 100%;
+
+  color: inherit;
+
+  font: inherit;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+#additional-categories {
+  display: contents;
+}
+
 .category-card:hover {
   transform: translateY(-5px);
 

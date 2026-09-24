@@ -182,15 +182,28 @@
 
           <a href="#templates" class="category-card">
             <div class="category-icon">◇</div>
-            <h3>Agency</h3>
+            <h3>ERP</h3>
             <span>8 Templates</span>
           </a>
 
-          <a href="#templates" class="category-card">
+          <button
+            type="button"
+            class="category-card category-toggle"
+            aria-expanded="false"
+            aria-controls="additional-categories"
+          >
             <div class="category-icon">＋</div>
             <h3>More</h3>
             <span>View all</span>
-          </a>
+          </button>
+
+          <div id="additional-categories" hidden>
+            <a href="#templates" class="category-card">
+              <div class="category-icon">◇</div>
+              <h3>Agency</h3>
+              <span>8 Templates</span>
+            </a>
+          </div>
 
         </div>
 

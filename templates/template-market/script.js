@@ -142,6 +142,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* =========================
+     Category Expansion
+  ========================== */
+
+  const categoryToggle =
+    document.querySelector(".category-toggle");
+
+  const additionalCategories =
+    document.querySelector("#additional-categories");
+
+  if (categoryToggle && additionalCategories) {
+    const toggleLabel = categoryToggle.querySelector("h3");
+    const toggleDescription = categoryToggle.querySelector("span");
+
+    categoryToggle.addEventListener("click", () => {
+      const isExpanded =
+        categoryToggle.getAttribute("aria-expanded") === "true";
+
+      categoryToggle.setAttribute(
+        "aria-expanded",
+        String(!isExpanded)
+      );
+
+      additionalCategories.hidden = isExpanded;
+
+      if (toggleLabel) {
+        toggleLabel.textContent = isExpanded ? "More" : "Less";
+      }
+
+      if (toggleDescription) {
+        toggleDescription.textContent =
+          isExpanded ? "View all" : "Show fewer";
+      }
+    });
+  }
+
+
+  /* =========================
      Search Shortcut
      Ctrl / Cmd + K
   ========================== */
